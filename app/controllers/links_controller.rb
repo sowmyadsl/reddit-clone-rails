@@ -38,6 +38,10 @@ class LinksController < ApplicationController
     end
   end
 
+  def edit
+     @link = Link.find(params[:id])
+  end
+
   # PATCH/PUT /links/1
   # PATCH/PUT /links/1.json
   def update
